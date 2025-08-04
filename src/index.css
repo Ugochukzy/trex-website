@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Trexsource Security Services Design System 
+Professional navy blue, white, and gold color scheme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 94% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 94% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 94% 13%;
+
+    /* Navy blue primary brand color */
+    --primary: 213 94% 13%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 213 54% 25%;
+
+    /* Gold accent color */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 213 94% 13%;
+
+    --muted: 213 27% 94%;
+    --muted-foreground: 213 27% 45%;
+
+    /* Gold accent variations */
+    --accent: 45 95% 55%;
+    --accent-foreground: 213 94% 13%;
+    --accent-light: 45 95% 75%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 27% 84%;
+    --input: 213 27% 94%;
+    --ring: 213 94% 13%;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gold-gradient: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-gold: 0 4px 20px hsl(var(--accent) / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 94% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 213 94% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 213 94% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 95% 55%;
+    --primary-foreground: 213 94% 13%;
+    --primary-light: 213 54% 35%;
+
+    --secondary: 213 54% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 213 54% 15%;
+    --muted-foreground: 213 27% 65%;
+
+    --accent: 45 95% 55%;
+    --accent-foreground: 213 94% 13%;
+    --accent-light: 45 95% 65%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 54% 20%;
+    --input: 213 54% 15%;
+    --ring: 45 95% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
